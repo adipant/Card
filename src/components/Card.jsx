@@ -1,14 +1,17 @@
 import React from "react";
 
-const data = [
+
+
+function Card() {
+
+  const data = [
   {image: 'https://images.unsplash.com/photo-1633174524827-db00a6b7bc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW1hem9ufGVufDB8fDB8fHww', name:"Amazon Product", desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor corrupti iste", stockcheck: true},
   {image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyZnVtZXN8ZW58MHx8MHx8fDA%3D', name: "Coco Noir", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor corrupti iste", stockcheck: false},
   {image: 'https://images.unsplash.com/photo-1716736180285-1591a65140c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D', name: "Moto Bike", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor corrupti iste", stockcheck: false},
   // {image: 'https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D', name: "Cruise Ship", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor corrupti iste", stockcheck: true}
 ];
 
-
-function Card() {
+  
   return (
     <div className="w-full h-screen bg-zinc-200 flex items-center justify-center gap-10">
       {data.map((elem, index)=>(
